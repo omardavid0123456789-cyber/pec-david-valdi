@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto Escolar Comunitario (PEC)</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Proyecto Escolar Comunitario</h1>
+        <p>“Redes de Bienestar: Tejiendo por la Salud Mental y el Éxito Escolar”</p>
+    </header>
+
+    <!-- CARRUSEL DE IMÁGENES -->
+    <section class="carrusel">
+        <div class="carrusel-contenedor">
+
+            <div class="diapositiva activa">
+                <img src="bienestar2.png" alt="Bienestar emocional">
+                <div class="texto-carrusel">
+                    <h2>Bienestar emocional</h2>
+                    <p>Cuidar nuestras emociones es importante.</p>
+                </div>
+            </div>
+
+            <div class="diapositiva">
+                <img src="bienestar mental.png" alt="Convivencia escolar">
+                <div class="texto-carrusel">
+                    <h2>Convivencia escolar</h2>
+                    <p>Construyamos un ambiente de respeto y apoyo.</p>
+                </div>
+            </div>
+
+            <div class="diapositiva">
+                <img src="salud.jfif" alt="Salud mental">
+                <div class="texto-carrusel">
+                    <h2>Salud mental</h2>
+                    <p>Expresar lo que sentimos también es importante.</p>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="anterior"
+                onclick="cambiarDiapositiva(-1)"
+                aria-label="Imagen anterior">
+                &#10094;
+            </button>
+
+            <button
+                type="button"
+                class="siguiente"
+                onclick="cambiarDiapositiva(1)"
+                aria-label="Imagen siguiente">
+                &#10095;
+            </button>
+
+        </div>
+
+        <div class="indicadores">
+            <button type="button" class="punto activo"
+                onclick="mostrarDiapositiva(0)"
+                aria-label="Mostrar imagen 1"></button>
+
+            <button type="button" class="punto"
+                onclick="mostrarDiapositiva(1)"
+                aria-label="Mostrar imagen 2"></button>
+
+            <button type="button" class="punto"
+                onclick="mostrarDiapositiva(2)"
+                aria-label="Mostrar imagen 3"></button>
+        </div>
+    </section>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#Actividades">Actividades</a>
+        <a href="#Resultados">Resultados</a>
+    </nav>
+
+    <!-- PÁGINA 1: PROYECTO -->
+    <section class="pagina" id="proyecto">
+
+        <h2 class="titulo-pagina">1. Proyecto y Problemática</h2>
+
+        <div class="tarjeta">
+            <h2>Problemática</h2>
+            <p>
+                En la comunidad escolar existe una preocupación por el bienestar
+                emocional de los estudiantes. Factores como el estrés académico,
+                la ansiedad, los problemas familiares, la presión social y la
+                falta de espacios para expresar las emociones pueden afectar
+                su desempeño.
+            </p>
+            <p>
+                Esta situación puede manifestarse mediante
+                <strong>bajo rendimiento académico, falta de motivación,
+                apatía, aislamiento y poca participación</strong> en las
+                actividades escolares y comunitarias.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Justificación</h2>
+            <p>
+                La salud mental es fundamental para que los estudiantes puedan
+                desarrollarse adecuadamente en los ámbitos académico, personal
+                y social.
+            </p>
+            <p>
+                Este proyecto busca promover un ambiente escolar donde los
+                alumnos puedan expresar sus emociones, aprender estrategias
+                para afrontar situaciones difíciles y conocer las redes de
+                apoyo disponibles.
+            </p>
+        </div>
+
+        <div class="tarjeta objetivo">
+            <h2>Objetivo general</h2>
+            <p>
+                <strong>
+                    Promover el bienestar emocional y la salud mental de los
+                    estudiantes mediante actividades de prevención, orientación,
+                    convivencia y creación de redes de apoyo que favorezcan
+                    el éxito escolar.
+                </strong>
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Objetivos específicos</h2>
+            <ul>
+                <li>Promover el cuidado de la salud mental.</li>
+                <li>Fomentar la expresión adecuada de las emociones.</li>
+                <li>Enseñar estrategias para manejar el estrés.</li>
+                <li>Mejorar la convivencia escolar.</li>
+                <li>Fomentar la participación de los estudiantes.</li>
+                <li>Dar a conocer las redes de apoyo disponibles.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- PÁGINA 2: ACTIVIDADES -->
+    <section class="pagina" id="Actividades">
+
+        <h2 class="titulo-pagina">2. Actividades y Organización</h2>
+
+        <div class="tarjeta">
+            <h2>Actividades del proyecto</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Campaña de salud mental</td>
+                        <td>Elaborar carteles e infografías sobre bienestar emocional.</td>
+                    </tr>
+                    <tr>
+                        <td>Buzón de bienestar</td>
+                        <td>Permitir que los estudiantes expresen inquietudes y propuestas de manera anónima.</td>
+                    </tr>
+                    <tr>
+                        <td>Taller de emociones</td>
+                        <td>Realizar dinámicas para reconocer y expresar emociones.</td>
+                    </tr>
+                    <tr>
+                        <td>Técnicas contra el estrés</td>
+                        <td>Practicar respiración, relajación y organización del tiempo.</td>
+                    </tr>
+                    <tr>
+                        <td>Red de apoyo escolar</td>
+                        <td>Identificar docentes, orientadores y familiares que puedan brindar apoyo.</td>
+                    </tr>
+                    <tr>
+                        <td>Actividades de convivencia</td>
+                        <td>Realizar actividades deportivas, culturales y recreativas.</td>
+                    </tr>
+                    <tr>
+                        <td>Mural del bienestar</td>
+                        <td>Crear un mural con frases y mensajes positivos.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Cronograma</h2>
+
+            <div class="tabla-contenedor">
+                <table class="cronograma">
+                    <tr>
+                        <th>Semana</th>
+                        <th>Actividad</th>
+                    </tr>
+                    <tr><td>1</td><td>Presentación del proyecto y encuesta inicial.</td></tr>
+                    <tr><td>2</td><td>Campaña informativa sobre salud mental.</td></tr>
+                    <tr><td>3</td><td>Taller de emociones y manejo del estrés.</td></tr>
+                    <tr><td>4</td><td>Creación del mural y buzón de bienestar.</td></tr>
+                    <tr><td>5</td><td>Actividades deportivas y de convivencia.</td></tr>
+                    <tr><td>6</td><td>Plática de orientación y redes de apoyo.</td></tr>
+                    <tr><td>7</td><td>Evaluación de las actividades.</td></tr>
+                    <tr><td>8</td><td>Presentación de resultados y propuestas.</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Recursos</h2>
+
+            <div class="recursos">
+                <div class="recurso">
+                    <h3>Recursos humanos</h3>
+                    <p>Estudiantes, docentes, padres de familia, orientadores y profesionales especializados.</p>
+                </div>
+
+                <div class="recurso">
+                    <h3>Recursos materiales</h3>
+                    <p>Cartulinas, hojas, marcadores, computadora, proyector, impresiones y material deportivo.</p>
+                </div>
+
+                <div class="recurso">
+                    <h3>Recursos tecnológicos</h3>
+                    <p>Computadoras, formularios digitales y presentaciones.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PÁGINA 3: RESULTADOS -->
+    <section class="pagina" id="Resultados">
+
+        <h2 class="titulo-pagina">3. Resultados y Evaluación</h2>
+
+        <div class="tarjeta">
+            <h2>Resultados esperados</h2>
+            <ul>
+                <li>Mayor conocimiento sobre la importancia de la salud mental.</li>
+                <li>Mejor capacidad para reconocer y expresar emociones.</li>
+                <li>Mejor convivencia entre los estudiantes.</li>
+                <li>Mayor participación en actividades escolares.</li>
+                <li>Identificación de las redes de apoyo disponibles.</li>
+                <li>Mayor disposición para pedir ayuda cuando sea necesario.</li>
+                <li>Fortalecimiento del sentido de comunidad.</li>
+                <li>Mejores condiciones para el aprendizaje y rendimiento académico.</li>
+            </ul>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Evaluación</h2>
+
+            <div class="evaluacion">
+                <div class="etapa">
+                    <h3>Antes</h3>
+                    <p>Realizar una encuesta anónima para conocer las necesidades y percepción de los estudiantes.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>Durante</h3>
+                    <p>Registrar la participación en las actividades y recopilar opiniones y sugerencias.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>Después</h3>
+                    <p>Aplicar una segunda encuesta para comparar resultados y conocer qué actividades fueron más útiles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Conclusión</h2>
+            <p>
+                El proyecto <strong>“Redes de Bienestar”</strong> busca que
+                la escuela sea un espacio donde los estudiantes puedan
+                aprender, convivir y cuidar su bienestar emocional.
+            </p>
+            <p>
+                La participación de toda la comunidad escolar permitirá
+                fortalecer las redes de apoyo, mejorar la convivencia y
+                favorecer el éxito académico.
+            </p>
+        </div>
+
+        <div class="mensaje">
+            <p>“Cuidar nuestra salud mental también es parte de aprender y crecer.”</p>
+        </div>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Proyecto Escolar Comunitario (PEC)</p>
+        <p>Redes de Bienestar 2026</p>
+    </footer>
+
+    <!-- JAVASCRIPT DEL CARRUSEL -->
+    <script>
+        let indiceActual = 0;
+        let temporizador;
+
+        function mostrarDiapositiva(indice) {
+            const diapositivas =
+                document.querySelectorAll(".diapositiva");
+            const puntos =
+                document.querySelectorAll(".punto");
+
+            if (diapositivas.length === 0) return;
+
+            indiceActual =
+                (indice + diapositivas.length) % diapositivas.length;
+
+            diapositivas.forEach((diapositiva, i) => {
+                diapositiva.classList.toggle(
+                    "activa",
+                    i === indiceActual
+                );
+            });
+
+            puntos.forEach((punto, i) => {
+                punto.classList.toggle(
+                    "activo",
+                    i === indiceActual
+                );
+            });
+
+            reiniciarTemporizador();
+        }
+
+        function cambiarDiapositiva(direccion) {
+            mostrarDiapositiva(indiceActual + direccion);
+        }
+
+        function reiniciarTemporizador() {
+            clearInterval(temporizador);
+
+            temporizador = setInterval(() => {
+                mostrarDiapositiva(indiceActual + 1);
+            }, 5000);
+        }
+
+        reiniciarTemporizador();
+    </script>
+
+</body>
+</html>

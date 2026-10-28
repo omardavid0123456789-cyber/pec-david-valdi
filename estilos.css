@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    background-color: #f1f7fb;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("bienestar.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #263238;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ENCABEZADO AZUL */
+header {
+    background: linear-gradient(135deg, #1769aa, #42a5f5);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* BOTONES DE NAVEGACIÓN */
+nav {
+    background: #0d47a1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #1976d2;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #0d47a1;
+}
+
+/* PÁGINAS */
+.pagina {
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 40px 25px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* TÍTULOS AZULES */
+.titulo-pagina {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+/* TARJETAS BLANCAS */
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #1976d2;
+    margin: 15px 0 8px;
+}
+
+.tarjeta p {
+    margin-bottom: 12px;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* OBJETIVO: FONDO BLANCO */
+.objetivo {
+    background: #ffffff;
+    border-left: 6px solid #1976d2;
+}
+
+/* TABLAS BLANCAS */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #ffffff;
+    color: #1565c0;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td,
+tr:nth-child(even) td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.cronograma td:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* RECURSOS SIN FONDO AZUL */
+.recursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recurso {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #dddddd;
+}
+
+.recurso h3 {
+    color: #1565c0;
+}
+
+/* EVALUACIÓN SIN FONDO AZUL */
+.evaluacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.etapa {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    border-top: 3px solid #dddddd;
+}
+
+/* MENSAJE FINAL BLANCO */
+.mensaje {
+    text-align: center;
+    background: #ffffff;
+    color: #263238;
+    padding: 35px;
+    border-radius: 18px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.mensaje p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* PIE DE PÁGINA AZUL */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* CARRUSEL DE IMÁGENES: 400 X 200 */
+.carrusel {
+    width: 400px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.diapositiva {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.diapositiva.activa {
+    display: block;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXTO SOBRE LAS IMÁGENES */
+.texto-carrusel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.texto-carrusel h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.texto-carrusel p {
+    font-size: 14px;
+}
+
+/* BOTONES DEL CARRUSEL */
+.anterior,
+.siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background: #0d47a1;
+}
+
+/* INDICADORES DEL CARRUSEL */
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.punto {
+    width: 13px;
+    height: 13px;
+    border: none;
+    border-radius: 50%;
+    background: #cccccc;
+    cursor: pointer;
+}
+
+.punto.activo {
+    background: #1976d2;
+    transform: scale(1.2);
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 768px) {
+    .recursos,
+    .evaluacion {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .titulo-pagina {
+        font-size: 25px;
+    }
+
+    .mensaje p {
+        font-size: 20px;
+    }
+}
